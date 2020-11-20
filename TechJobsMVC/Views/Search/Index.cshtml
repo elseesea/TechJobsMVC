@@ -60,7 +60,7 @@
                         Employer
                     </td>
                     <td>
-                        @job.Employer
+                        <a asp-controller="List" asp-action="Jobs" asp-route-column="employer" asp-route-value="@job.Employer">@job.Employer</a>
                     </td>
                 </tr>
                 <tr>
@@ -68,7 +68,7 @@
                         Location
                     </td>
                     <td>
-                        @job.Location
+                        <a asp-controller="List" asp-action="Jobs" asp-route-column="location" asp-route-value="@job.Location">@job.Location</a>
                     </td>
                 </tr>
                 <tr>
@@ -76,9 +76,10 @@
                         Skill
                     </td>
                     <td>
-                        @job.CoreCompetency
+                        <a asp-controller="List" asp-action="Jobs" asp-route-column="coreCompetency" asp-route-value="@job.CoreCompetency">@job.CoreCompetency</a>
                     </td>
                 </tr>
+
             </table>
             }
         }
